@@ -6,9 +6,35 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite84fb827437dd3ef384bc5a74c57d728
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PhpOffice\\PhpPresentation\\' => 26,
+            'PhpOffice\\Common\\' => 17,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PhpOffice\\PhpPresentation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoffice/phppresentation/src/PhpPresentation',
+        ),
+        'PhpOffice\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoffice/common/src/Common',
+        ),
+    );
+
+    public static $classMap = array (
+        'PclZip' => __DIR__ . '/..' . '/pclzip/pclzip/pclzip.lib.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInite84fb827437dd3ef384bc5a74c57d728::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite84fb827437dd3ef384bc5a74c57d728::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInite84fb827437dd3ef384bc5a74c57d728::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -15,6 +15,5 @@ PHP - iMasters
 - Post base "https://imasters.com.br/linguagens/php/criando-apresentacoes-com-o-phppresentation/".
 - Instalar "PHPPresentation".
     composer require phpoffice/phppresentation
-- Rodar arquivo para criar Excel.
-    php spreadsheet.php
-    php spreadsheetSum.php
+- Rodar arquivo para criar PPT.
+    php first.php
