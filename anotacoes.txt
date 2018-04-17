@@ -1,0 +1,20 @@
+PHP - iMasters
+
+# Passo a Passo Inicial:
+- Criar pasta do projeto e acessar pelo prompt.
+- Iniciar projeto com composer.
+    composer init
+- Adicionar autoload.
+    composer dumpautoload
+- Adicionar o projeto no GitHub.
+- Adicionar o ".gitignore".
+- Iniciar o servidor PHP.
+    php -S localhost:8000
+
+# Anotações
+- Post base "https://imasters.com.br/linguagens/php/criando-apresentacoes-com-o-phppresentation/".
+- Instalar "PHPPresentation".
+    composer require phpoffice/phppresentation
+- Rodar arquivo para criar Excel.
+    php spreadsheet.php
+    php spreadsheetSum.php
